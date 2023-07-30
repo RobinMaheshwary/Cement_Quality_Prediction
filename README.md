@@ -1,1 +1,5 @@
-# Cement_Quality_Prediction
+A cement quality prediction model using machine learning is designed to analyze various parameters and data from the cement production process to predict the quality of the final cement output. The model leverages historical data and uses advanced machine learning algorithms to identify patterns, correlations, and factors that influence cement quality.This model is based upon some regression technique such as LinearRegression,Ridge,Lasson,RandomForestRegressor,GradientBoostingRegresso,out of which finally we have taken RandomForestRegressor as it gives the best accuracy almost 93%.Apart from this  we have used various python libraries and Sklearn and some hyperparameter tuning technique.
+Here are some EDA files are attached
+![Screenshot 2023-07-30 183944](https://github.com/AkashHarh/Cement_Quality_Prediction/assets/113635249/2e8b4b75-e2ba-4767-90a9-d8f5435c0696)
+![Screenshot 2023-07-30 183528](https://github.com/AkashHarh/Cement_Quality_Prediction/assets/113635249/e780db62-d778-495d-adfb-14584a436d8a)
+![Screenshot 2023-07-30 183517](https://github.com/AkashHarh/Cement_Quality_Prediction/assets/113635249/52b6f824-26b3-4c4d-85aa-88a984eaa8d9)
