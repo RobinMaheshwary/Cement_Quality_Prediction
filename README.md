@@ -67,14 +67,41 @@ List the project dependencies and their versions:
 
 ## Contributing
 
-If you want to contribute to this project, please follow these guidelines:
+If you want to contribute to this Cement Quality Prediction project, please follow these guidelines:
 
-1. Fork the repository on GitHub.
-2. Clone your fork locally.
-3. Create a new branch for your feature/bugfix.
-4. Commit your changes with clear messages.
-5. Push your branch to your fork.
-6. Create a pull request with a detailed description.
+1. **Fork the repository on GitHub.**
 
+2. **Clone your fork locally.**
+
+   ```bash
+   git clone https://github.com/RobinMaheshwary/Cement_Quality_Prediction.git
+   cd Cement_Quality_Prediction
+   ```
+
+3. **Create a new branch for your feature/bugfix.**
+
+   ```bash
+   git checkout -b feature-name
+   ```
+
+4. **Commit your changes with clear messages.**
+
+   ```bash
+   git commit -m "Your descriptive commit message here"
+   ```
+
+5. **Push your branch to your fork.**
+
+   ```bash
+   git push origin feature-name
+   ```
+
+6. **Create a pull request with a detailed description.**
+
+   Explain the purpose and details of your pull request in the description. Be sure to reference any related issues if applicable.
 
 ---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE.md) file for details.
