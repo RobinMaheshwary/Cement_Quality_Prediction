@@ -1,38 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Input</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cement Quality Prediction Model</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/brand/truck.png">
+
     <link rel="stylesheet" type="text/css" href="/static/index.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-bottom/">
+
+    <link href="static/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 </head>
 <body>
-    <h1>Input Data for Cement Quality Prediction</h1>
-    <form method="POST" action="/">
-        <label for="cement">Cement (kg/m^3):</label>
-        <input type="text" name="cement" id="cement"><br><br>
-
-        <label for="blast_furnace_slag">Blast Furnace Slag (kg/m^3):</label>
-        <input type="text" name="blast_furnace_slag" id="blast_furnace_slag"><br><br>
-
-        <label for="fly_ash">Fly Ash (kg/m^3):</label>
-        <input type="text" name="fly_ash" id="fly_ash"><br><br>
-
-        <label for="water">Water (kg/m^3):</label>
-        <input type="text" name="water" id="water"><br><br>
-
-        <label for="superplasticizer">Superplasticizer (kg/m^3):</label>
-        <input type="text" name="superplasticizer" id="superplasticizer"><br><br>
-
-        <label for="coarse_aggregate">Coarse Aggregate (kg/m^3):</label>
-        <input type="text" name="coarse_aggregate" id="coarse_aggregate"><br><br>
-
-        <label for="fine_aggregate">Fine Aggregate (kg/m^3):</label>
-        <input type="text" name="fine_aggregate" id="fine_aggregate"><br><br>
-
-        <label for="age">Age (days):</label>
-        <input type="text" name="age" id="age"><br><br>
+    
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="static/assets/brand/truck.png" alt="" width="72" height="72">
+        <h1 class="display-4 fw-bold">Cement Quality Prediction Model</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">The cement industry plays a crucial role in the construction sector,
+            providing the primary building material for infrastructure and
+            buildings worldwide. Ensuring consistent and high-quality cement
+            is essential for construction projects to meet safety and durability
+            standards. Leveraging artificial intelligence and data analytics, this model aims
+            to enhance cement production processes.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-primary btn-lg px-4 gap-3" href="#form-start">Run Model</a>
+            <a class="btn btn-outline-secondary btn-lg px-4" href="https://github.com/RobinMaheshwary/Cement_Quality_Prediction">View GitHub</a>
+          </div>
+        </div>
+    </div>
 
 
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Features</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <img class="bi" src="static/assets/brand/deep-learning.png" width="72" height="72">
+            </div>
+            <div>
+              <h2>Advanced Machine Learning Algorithm</h2>
+              <p>A random forest regressor analyzes various parameters in order to predict the cement output.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <img class="bi" src="static/assets/brand/big-data.png" width="72" height="72">
+            </div>
+            <div>
+              <h2>Trained on a Large Dataset</h2>
+              <p>Consisting of over 1,000 entries, the site utilizes Flask API calls to predict model outcome in real time.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <img class="bi" src="static/assets/brand/analytics.png" width="72" height="72">
+            </div>
+            <div>
+              <h2>Accurate Predictions</h2>
+              <p>With an accuracy of 93%, the model uses various Python libraries for performing data analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <h1 class="display-6">Inputs for Cement Quality Prediction</h1>
+    <a id="form-start"></a>
+    <div class="container text-center">
+        <div class="col-md-12">
+            
+            <form method="POST" action="/">
+
+                <p class="fw-bold">Cement</p>
+                <label class="form-label" for="cement">Enter the amount of cement (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="cement" id="cement"><br>
+                    </div>
+                </div>
+                    
+                
+                <p class="fw-bold">Blast Furnace Slag</p>
+                <label class="form-label" for="blast_furnace_slag">Enter the amount of slag (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="blast_furnace_slag" id="blast_furnace_slag"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Fly Ash</p>
+                <label class="form-label" for="fly_ash">Enter the amount of fly ash (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="fly_ash" id="fly_ash"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Water</p>
+                <label class="form-label" for="water">Enter the amount of water (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="water" id="water"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Superplasticizer</p>
+                <label class="form-label" for="superplasticizer">Enter the amount of superplasticizer (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="superplasticizer" id="superplasticizer"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Coarse Aggregate</p>
+                <label class="form-label" for="coarse_aggregate">Enter the amount of coarse aggregate (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="coarse_aggregate" id="coarse_aggregate"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Fine Aggregate</p>
+                <label class="form-label" for="fine_aggregate">Enter the amount of fine aggregate (in kg/m<sup>3</sup>):</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="fine_aggregate" id="fine_aggregate"><br>
+                    </div>
+                </div>
+                
+
+                <p class="fw-bold">Age</p>
+                <label class="form-label" for="age">Enter the number of days:</label>
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <input class="form-control" type="text" name="age" id="age"><br>
+                    </div>
+                </div>
+                
+
+                <hr class="my-4">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+        
+
+
+    <div class="py-5"></div>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Cement Quality Prediction Model | T2 Project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://github.com/RobinMaheshwary/Cement_Quality_Prediction">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+      <script src="static/assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
